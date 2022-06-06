@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+nav{
+   position: fixed;
+   width: 100%;
+}
+
+.nab-bar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #41228E;
+}
+
+
+ul{
+    margin: 17px 71px;
+}
+
+ul li{
+    list-style: none ;
+    display: inline-block;
+    padding: 20px 10px;
+    cursor: pointer; 
+}
+
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    color: #7a7586;
+}
+
+
+.logo-section h1{
+    font-size: 40px;
+    padding: 20px 10px;
+    margin: 0px 70px;
+    
+
+}
+
+#menu-icon{
+    display: none;
+}
+/* menu respossibe part */
+
+@media only screen and (max-width: 825px) {
+    #menu-icon {
+      display: block;
+    }
+  }
+/* meni hidden */
+  @media only screen and (max-width: 825px) {
+    ul li {
+      display: none;
+      padding: 20px 0px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  /* banner */
+
+  .banner{
+      height: 940px;
+      /* width: 100vh; */
+      width: 100%;
+      border: 2px solid rgb(106, 208, 248);
+      background-color: #41228E;
+      background-image: url("img/leaf-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+
+      
+  }
+
+
+.banner-text-area{
+    margin-top: 250px !important;
+    color: white;
+    font-size: 40px;
+    width: 60%;
+    height: 300px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* responsive banner text area */
+
+
+@media only screen and (max-width: 825px) {
+    .banner-text-area {
+      font-size: 25px;
+      margin-top: 120px !important;
+      margin-left:40px ;
+    }
+  }
+
+  @media only screen and (max-width: 825px) {
+    .banner {
+      height: 600px;
+    }
+  }
+
+    /* background-image: url("img/leaf-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover; */
+
+.descripction{
+    margin-top: 100px !important;
+    margin: 0 auto;
+    min-height: 180px;
+    width: 60%;
+    /* border: 2px solid gray; */
+    text-align: center;
+    font-size: 30px;
+}
+.descripction h2{
+    margin-top: 10px;
+    font-size: 25px;
+    color: #41228E;
+    
+}
+
+/* descripction responsive */
+
+@media only screen and (max-width: 825px) {
+    .descripction {
+      font-size: 30px;
+      width: 90%;
+      text-align: center;
+      
+      
+    }
+  }
+
+  /* skill */
+
+  .skill{
+      display: flex;
+      justify-content: center;
+     flex-wrap: wrap;
+  }
+  .skill-header{
+    text-align: center;
+    font-size: 50px;
+    padding: 100px 0px !important;
+  }
+  .graph{
+    
+      min-height: 300px;
+      min-width: 330px;
+      padding: 20px;     
+  }
+  .graph1{
+    background-color: orange;
+  }
+
+  .graph2{
+    background-color: #9473E6;
+  }
+  .graph3{
+    background-color: #BDECF6;
+  }
+  .graph4{
+    background-color: #FFBCAA;
+  }
+.web h1{
+  margin-top: 15px;
+    text-align: center;
+    font-size: 35px;
+}
+.web{
+  margin-right: 35px;
+    height: 370px;
+    width: 350px;
+    /* border: 2px solid gray; */
+    
+}
+
+/* expericence */
+
+.img-section{
+   margin-top: 20px 0px;
+    
+
+}
+.experience{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+
+}
+
+.experience-header{
+  text-align: center;
+  font-size: 50px;
+  padding: 100px 0px !important;
+}
+.expe-card{  
+ 
+
+  margin-top: 10px;
+  min-width: 450px;
+  height: 348px;
+  /* border: 2px solid rebeccapurple; */
+  text-align: center;
+  margin-right:20px ;
+  
+}
+
+.experience p{
+  font-size: 22px;
+  padding: 10px 0;
+}
+.experience h3{
+  font-size: 33px;
+  padding: 5px 0;
+}
+
+.experience h4{
+  font-size: 25px;
+  color:gray;
+}
+.education-header{
+  text-align: center;
+  font-size: 50px;
+  padding: 150px 0px !important;
+}
+.edu-item{
+  display: flex;
+  border: 2px solid rgb(37, 193, 60);
+  min-width: 600px;
+  /* width: 100%; */
+  margin: 30px 10px;
+
+}
+.education{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.edu-container{
+  display: flex;
+ 
+
+justify-content: center;
+  /* border: 2px solid rgb(132, 27, 27); */
+  flex-wrap: wrap;
+}
+
+.edu-middle{
+  display: flex;
+position: relative;
+margin-right: 20px;
+margin-top: 10px;
+justify-content: center;
+  /* border: 2px solid rgb(45, 25, 191); */
+
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+
+@media only screen and (max-width: 720px) {
+  .edu-item{
+    min-width: 300px;
+  
+    
+    
+  }
+}
